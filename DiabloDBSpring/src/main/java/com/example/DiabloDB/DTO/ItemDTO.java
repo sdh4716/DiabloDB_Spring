@@ -2,6 +2,7 @@ package com.example.DiabloDB.DTO;
 
 import java.sql.Blob;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,9 +17,13 @@ public class ItemDTO {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private Long num;
+	@Column(length=3000)
 	private String names;
+	@Column(length=3000)
 	private String options;
+	@Column(length=3000)
 	private String recommends;
+	@Column(length=3000)
 	private String categorys;
 	private Long likes;
 	private Long dislikes;
