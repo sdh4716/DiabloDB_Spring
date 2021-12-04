@@ -10,24 +10,25 @@ import javax.persistence.PrePersist;
 
 import lombok.Data;
 
-@Entity
 @Data
+@Entity(name="item_dto")
 public class ItemDTO {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY) 
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private Long num;
-	private String name;
-	private String option;
-	private String recommend;
-	private String category;
-	private Long like;
-	private Long dislike;
-	private Blob image;
+	private String names;
+	private String options;
+	private String recommends;
+	private String categorys;
+	private Long likes;
+	private Long dislikes;
+	private Blob images;
 	
 	// 좋아요, 싫어요 초기값
-		@PrePersist
-		public void prePersist() {
-			this.like= this.like==null?0:this.like;
-			this.dislike= this.dislike==null?0:this.dislike;
-		}
+	@PrePersist
+	public void prePersist() {
+		this.likes= this.likes==null?0:this.likes;
+		this.dislikes= this.dislikes==null?0:this.dislikes;
+	}
 
 }
