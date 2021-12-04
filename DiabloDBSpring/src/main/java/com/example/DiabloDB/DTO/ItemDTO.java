@@ -20,7 +20,7 @@ public class ItemDTO {
 	@Column(length=3000)
 	private String names;
 	@Column(length=3000)
-	private String options;
+	private String options;  
 	@Column(length=3000)
 	private String recommends;
 	@Column(length=3000)
