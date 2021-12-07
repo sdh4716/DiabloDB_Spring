@@ -20,14 +20,15 @@ public class ItemDTO {
 	@Column(length=3000)
 	private String names;
 	@Column(length=3000)
-	private String options;  
+	private String option1;  
+	@Column(length=3000)
+	private String option2;  
 	@Column(length=3000)
 	private String recommends;
 	@Column(length=3000)
 	private String categorys;
 	private Long likes;
 	private Long dislikes;
-	private Blob images;
 	
 	// 좋아요, 싫어요 초기값
 	@PrePersist
