@@ -17,5 +17,5 @@ public interface ItemDTO_Repository extends JpaRepository<ItemDTO, Long>{
 	
 	@Query(value="select * from diadb.item_dto where names like %:names%",nativeQuery=true)
 	public List<ItemDTO> Search(@Param("names")String names);
-	
+	 
 }

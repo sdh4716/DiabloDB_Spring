@@ -10,5 +10,5 @@ public class DiabloDbSpringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DiabloDbSpringApplication.class, args);
 	}
-
+ 
 }
