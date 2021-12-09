@@ -43,5 +43,11 @@ public class ItemDTO_Controller {
 	 public List<ItemDTO> Search(@PathVariable String names) {
 		 return item_repository.Search(names);
 	 }
+	 
+	 //상세보기
+	 @GetMapping("/detail/{num}")
+	 public ItemDTO detail(@PathVariable Long num) { 
+		 return item_repository.findById(num).get();
+	 }
 	
 }
