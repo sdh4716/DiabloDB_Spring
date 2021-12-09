@@ -38,7 +38,7 @@ public class ItemDTO_Controller {
 		 return item_repository.find_all(category);
 	 }
 	 
-     //검색 
+     //검색  
 	 @GetMapping("/search/{names}")
 	 public List<ItemDTO> Search(@PathVariable String names) {
 		 return item_repository.Search(names);

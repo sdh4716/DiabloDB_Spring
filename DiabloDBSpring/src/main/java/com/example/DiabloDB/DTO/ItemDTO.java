@@ -21,7 +21,7 @@ public class ItemDTO {
 	private String names;
 	@Column(length=3000)
 	private String option1;  
-	@Column(length=3000)
+	@Column(length=3000) 
 	private String option2;  
 	@Column(length=3000)
 	private String recommends;
